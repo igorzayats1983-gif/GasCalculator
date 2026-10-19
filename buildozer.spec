@@ -48,3 +48,4 @@ log_level = 2
 
 # (str) Шлях до папки з результатами збірки
 bin_dir = ./bin
+android.accept_sdk_license = True
