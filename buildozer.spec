@@ -12,14 +12,14 @@ package.domain = org.grmu
 # (str) Вихідний код лежить у тій самій папці
 source.dir = .
 
-# (list) Розширення файлів, які треба включити в збірку (ОБОВ'ЯЗКОВО вказуємо png, щоб зберігся логотип!)
+# (list) Розширення файлів, які треба включити в збірку
 source.include_exts = py,png,kv,atlas
 
-# (list) Всі необхідні Python-залежності (додано setuptools для стабільної збірки)
-requirements = python3,kivy==2.3.0,kivymd,python-docx,setuptools
+# (list) Всі необхідні Python-залежності (актуальні сумісні пакети)
+requirements = python3,kivy,kivymd,python-docx,setuptools
 
-# (str) Версія Python, яка використовується для збірки (захист від помилок Python 3.14)
-python.version = 3.11
+# (str) Використання актуальної гілки python-for-android для сумісності з новими середовищами
+p4a.branch = master
 
 # (str) Версія застосунку
 version = 1.0
@@ -30,7 +30,7 @@ orientation = portrait
 # (bool) Повноекранний режим
 fullscreen = 0
 
-# (list) Дозволи Android (необхідні для збереження актів у папочку Завантаження / Пам'ять)
+# (list) Дозволи Android
 android.permissions = WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE, MANAGE_EXTERNAL_STORAGE
 
 # (int) Мінімальна та цільова версії Android API
@@ -41,7 +41,7 @@ android.ndk = 25b
 # (bool) Дозвіл на використання застарілих методів збереження файлів
 android.requestLegacyExternalStorage = true
 
-# (list) Архітектури процесорів (ARM64 для сучасних смартфонів)
+# (list) Архітектури процесорів
 android.archs = arm64-v8a, armeabi-v7a
 
 [buildozer]
