@@ -15,8 +15,11 @@ source.dir = .
 # (list) Розширення файлів, які треба включити в збірку (ОБОВ'ЯЗКОВО вказуємо png, щоб зберігся логотип!)
 source.include_exts = py,png,kv,atlas
 
-# (list) Всі необхідні Python-залежності
-requirements = python3,kivy==2.3.0,kivymd,python-docx
+# (list) Всі необхідні Python-залежності (додано setuptools для стабільної збірки)
+requirements = python3,kivy==2.3.0,kivymd,python-docx,setuptools
+
+# (str) Версія Python, яка використовується для збірки (захист від помилок Python 3.14)
+python.version = 3.11
 
 # (str) Версія застосунку
 version = 1.0
