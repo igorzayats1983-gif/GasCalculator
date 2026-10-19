@@ -16,7 +16,7 @@ source.dir = .
 source.include_exts = py,png,kv,atlas
 
 # (list) Всі необхідні Python-залежності (актуальні сумісні пакети)
-requirements = python3,kivy,kivymd,python-docx,setuptools
+requirements = python3,kivy,kivymd==1.1.1,python-docx,setuptools
 
 # (str) Використання актуальної гілки python-for-android для сумісності з новими середовищами
 p4a.branch = master
